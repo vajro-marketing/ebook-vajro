@@ -3,7 +3,7 @@
       		if(r>1){
       		   period.options[r].setAttribute('disabled','disabled');
           }
-      }
+      } 
       document.getElementById("ebook-submit").addEventListener("click", function (e) {
           e.preventDefault();
           var form = document.getElementById("ebook-form");
