@@ -54,7 +54,7 @@
               )
             : "";
            var ebook_name = document.getElementById("name-ebook").innerHTML;
-           var ebook_url document.getElementById("file-url").innerHTML;
+           var ebook_url = document.getElementById("file-url").innerHTML;
           if (nameValue && emailValue && phoneValue) {
             var jsondata = JSON.stringify({
               ebook: ebook_name ? ebook_name : "",
