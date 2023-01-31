@@ -54,7 +54,7 @@
               )
             : "";
            var ebook_name = document.getElementById("name-ebook").innerHTML;
-           var ebook_url document.getElementById("file-url").innerHTML;
+           var ebook_url =  document.getElementById("file-url").innerHTML;
           if (nameValue && emailValue && phoneValue) {
             var jsondata = JSON.stringify({
               ebook: ebook_name ? ebook_name : "",
@@ -144,9 +144,11 @@
                   '"}'
               )
             : "";
+              var ebook_name = document.getElementById("name-ebook-push").innerHTML;
+           var ebook_url = document.getElementById("push-file-url").innerHTML;
           if (nameValue && emailValue && phoneValue && periodvalue) {
             var jsondata = JSON.stringify({
-              ebook: "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}",
+              ebook: ebook_name ? ebook_name : "",
               name: name ? name : "",
               email: email ? email : "",
               phone: phone,
@@ -169,8 +171,8 @@
               });
               setTimeout(() => {
                 var a = document.createElement("a");
-                a.setAttribute("download", "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}");
-                a.setAttribute("href", "{{wf {&quot;path&quot;:&quot;ebooks&quot;,&quot;type&quot;:&quot;FileRef&quot;\} }}");
+                a.setAttribute("download", ebook_name);
+                a.setAttribute("href", ebook_url);
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
