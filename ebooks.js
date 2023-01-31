@@ -206,7 +206,7 @@ document.getElementById("ebook-submit-7-plug").addEventListener("click", functio
           var nameValue = false,
             emailValue = false,
             phoneValue = false,
-            storevalue = false;
+            storeValue = false;
           
           if (name != "") {
             nameValue = true;
@@ -252,7 +252,7 @@ document.getElementById("ebook-submit-7-plug").addEventListener("click", functio
             : "";
               var ebook_name = document.getElementById("name-ebook-push").innerHTML;
            var ebook_url = document.getElementById("push-file-url").innerHTML;
-          if (nameValue && emailValue && phoneValue && storevalue) {
+          if (nameValue && emailValue && phoneValue && storeValue) {
             var jsondata = JSON.stringify({
               ebook: ebook_name ? ebook_name : "",
               name: name ? name : "",
