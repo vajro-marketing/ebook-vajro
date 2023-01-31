@@ -1,10 +1,10 @@
-let period = document.getElementById("period_field");
+      let period = document.getElementById("period_field");
       for(let r=0; r<period.options.length; r++){
       		if(r>1){
       		   period.options[r].setAttribute('disabled','disabled');
           }
       }
-      		document.getElementById("ebook-submit").addEventListener("click", function (e) {
+      document.getElementById("ebook-submit").addEventListener("click", function (e) {
           e.preventDefault();
           var form = document.getElementById("ebook-form");
           var formData = new FormData(form);
