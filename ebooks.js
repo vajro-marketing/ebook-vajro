@@ -250,8 +250,8 @@ document.getElementById("ebook-submit-7-plug").addEventListener("click", functio
                   '"}'
               )
             : "";
-              var ebook_name = document.getElementById("name-ebook-push").innerHTML;
-           var ebook_url = document.getElementById("push-file-url").innerHTML;
+              var ebook_name = document.getElementById("7-plug-name").innerHTML;
+           var ebook_url = document.getElementById("7plug-url").innerHTML;
           if (nameValue && emailValue && phoneValue && storeValue) {
             var jsondata = JSON.stringify({
               ebook: ebook_name ? ebook_name : "",
